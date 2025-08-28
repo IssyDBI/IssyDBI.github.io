@@ -245,6 +245,8 @@ nav ul li a:hover::after {
     display: flex;
     gap: 15px;
     margin-top: auto;
+    /* This new line prevents the container from shrinking too much */
+    flex-wrap: wrap; 
 }
 
 .btn {
@@ -256,11 +258,10 @@ nav ul li a:hover::after {
     font-weight: 700;
     text-align: center;
     transition: all 0.3s ease;
-    flex: 1;
     letter-spacing: 0.5px;
     border: 2px solid transparent;
+    white-space: nowrap; 
 }
-
 .btn:hover {
     background: var(--accent-color);
     color: var(--white-color);
