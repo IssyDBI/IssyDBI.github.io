@@ -1,41 +1,10 @@
 
-
-/* --- 1. Variables (🎨 CUSTOMIZE YOUR COLORS HERE!) --- */
+/* --- 1. Variables (Modern Tech Palette) --- */
 :root {
-    /* 
-    Hello! To change your portfolio's colors, you can use one of the palettes below.
-    Simply UNCOMMENT the palette you want to use by deleting the '/*' and '*/'
-    and COMMENT OUT the palette you don't want to use by adding '/*' at the start
-    and '*/' at the end.
-    */
-
-    /* PALETTE 1: ELEGANT & WARM (Default) */
-    --primary-color: #212529;   /* Deep Charcoal */
-    --secondary-color: #495057; /* Muted Slate Gray */
-    --accent-color: #D4A373;    /* Warm Golden Ochre */
-
-
-    /* 
-    PALETTE 2: MODERN TECH
-    --primary-color: #1A2A4C;   
-    --secondary-color: #3D5A80; 
-    --accent-color: #29B6F6;    
-    */
-
-     
-    PALETTE 3: CALM & NATURAL
-    --primary-color: #004D40;   
-    --secondary-color: #455A64; 
-    --accent-color: #66BB6A;    
-    
-
-    /* 
-    PALETTE 4: BOLD & CREATIVE
-    --primary-color: #311B92;   
-    --secondary-color: #5E35B1; 
-    --accent-color: #9575CD;    
-    */
-
+    /* This template uses a professional "Modern Tech" color scheme. */
+    --primary-color: #1A2A4C;   /* Midnight Blue */
+    --secondary-color: #3D5A80; /* Slate Blue */
+    --accent-color: #29B6F6;    /* Vivid Sky Blue */
 
     /* --- Shared Variables (These usually don't need to change) --- */
     --light-bg-color: #F8F9FA;
@@ -129,7 +98,7 @@ header p {
 
 /* --- 4. Navigation --- */
 nav {
-    background-color: rgba(33, 37, 41, 0.95);
+    background-color: rgba(26, 42, 76, 0.95); /* Adjusted for new primary color */
     backdrop-filter: blur(5px);
     position: sticky;
     top: 0;
@@ -227,7 +196,7 @@ nav ul li a:hover::after {
 /* --- 5.5 Project Cards --- */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusted for mobile */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 40px;
 }
 
@@ -421,7 +390,7 @@ nav ul li a:hover::after {
 .contact-form textarea:focus {
     outline: none;
     border-color: var(--accent-color);
-    box-shadow: 0 0 0 3px rgba(212, 163, 115, 0.25);
+    box-shadow: 0 0 0 3px rgba(41, 182, 246, 0.25); /* Adjusted for new accent color */
 }
 
 .contact-form button.btn {
