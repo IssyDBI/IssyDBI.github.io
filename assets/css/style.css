@@ -1,13 +1,44 @@
-/* ==========================================================================
-   Elegant & Beautiful Portfolio Theme - Final Version
-   ========================================================================== */
 
-/* --- 1. Variables (Elegant Palette & Fonts) --- */
+
+/* --- 1. Variables (🎨 CUSTOMIZE YOUR COLORS HERE!) --- */
 :root {
+    /* 
+    Hello! To change your portfolio's colors, you can use one of the palettes below.
+    Simply UNCOMMENT the palette you want to use by deleting the '/*' and '*/'
+    and COMMENT OUT the palette you don't want to use by adding '/*' at the start
+    and '*/' at the end.
+    */
+
+    /* PALETTE 1: ELEGANT & WARM (Default) */
     --primary-color: #212529;   /* Deep Charcoal */
     --secondary-color: #495057; /* Muted Slate Gray */
     --accent-color: #D4A373;    /* Warm Golden Ochre */
-    --light-bg-color: #F8F9FA;  /* Off-White/Light Cream */
+
+
+    /* 
+    PALETTE 2: MODERN TECH
+    --primary-color: #1A2A4C;   
+    --secondary-color: #3D5A80; 
+    --accent-color: #29B6F6;    
+    */
+
+    /* 
+    PALETTE 3: CALM & NATURAL
+    --primary-color: #004D40;   
+    --secondary-color: #455A64; 
+    --accent-color: #66BB6A;    
+    */
+
+    /* 
+    PALETTE 4: BOLD & CREATIVE
+    --primary-color: #311B92;   
+    --secondary-color: #5E35B1; 
+    --accent-color: #9575CD;    
+    */
+
+
+    /* --- Shared Variables (These usually don't need to change) --- */
+    --light-bg-color: #F8F9FA;
     --white-color: #ffffff;
     --dark-text-color: #343A40;
     --light-text-color: #6c757d;
@@ -196,7 +227,7 @@ nav ul li a:hover::after {
 /* --- 5.5 Project Cards --- */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusted for mobile */
     gap: 40px;
 }
 
@@ -278,7 +309,7 @@ nav ul li a:hover::after {
     color: var(--white-color);
 }
 
-/* --- 6. Tabular Skills Section (NEW) --- */
+/* --- 6. Tabular Skills Section --- */
 #skills .container {
     max-width: 1100px;
 }
@@ -436,11 +467,9 @@ footer p {
         text-align: center;
     }
 
-    /* 👇 THIS IS THE NEW RULE TO FIX THE MOBILE VIEW 👇 */
     #projects .container {
-        padding: 0 5px; /* Adds a little space on the sides */
+        padding: 0 5px; 
     }
-    /* 👆 END OF NEW RULE 👆 */
 
     .projects-grid {
         grid-template-columns: 1fr;
