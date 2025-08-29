@@ -196,8 +196,7 @@ nav ul li a:hover::after {
 /* --- 5.5 Project Cards --- */
 .projects-grid {
     display: grid;
-    /* This is the key fix for the container size */
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 40px;
 }
 
@@ -241,10 +240,9 @@ nav ul li a:hover::after {
     margin-bottom: 30px;
     flex-grow: 1;
 }
+
 .project-buttons {
     display: flex;
-    /* This ensures buttons stay side-by-side */
-    flex-wrap: nowrap; 
     gap: 15px;
     margin-top: auto;
 }
@@ -258,11 +256,11 @@ nav ul li a:hover::after {
     font-weight: 700;
     text-align: center;
     transition: all 0.3s ease;
+    flex: 1;
     letter-spacing: 0.5px;
     border: 2px solid transparent;
-    /* This allows the button to shrink but not grow, sizing naturally */
-    flex: 0 1 auto; 
 }
+
 .btn:hover {
     background: var(--accent-color);
     color: var(--white-color);
@@ -279,6 +277,7 @@ nav ul li a:hover::after {
     background: var(--primary-color);
     color: var(--white-color);
 }
+
 
 /* --- 6. Tabular Skills Section --- */
 #skills .container {
